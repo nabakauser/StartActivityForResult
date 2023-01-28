@@ -26,11 +26,9 @@ class ThirdActivity : AppCompatActivity() {
 
     private fun getActivityResult(activityResult: ActivityResult?) {
         if(activityResult?.resultCode == RESULT_OK ) {
-            binding?.uiBtnThree?.setOnClickListener {
                 val text = activityResult.data?.getStringExtra("FA_RESPONSE")
                 setResult(Activity.RESULT_OK, Intent().putExtra("TA_RESPONSE", text))
                 finish()
-            }
         }
     }
 

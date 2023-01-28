@@ -26,11 +26,9 @@ class SecondActivity : AppCompatActivity() {
 
     private fun getActivityResult(activityResult: ActivityResult?) {
         if(activityResult?.resultCode == RESULT_OK ) {
-            binding?.uiBtnTwo?.setOnClickListener {
                 val text = activityResult.data?.getStringExtra("TA_RESPONSE")
                 setResult(Activity.RESULT_OK, Intent().putExtra("SA_RESPONSE", text))
                 finish()
-            }
         }
     }
 

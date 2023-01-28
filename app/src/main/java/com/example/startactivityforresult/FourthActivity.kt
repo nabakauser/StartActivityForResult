@@ -18,7 +18,7 @@ class FourthActivity : AppCompatActivity() {
     private fun sendResult() {
         binding?.uiBtnFour?.setOnClickListener {
             val text = binding?.uiEditText?.text.toString()
-            setResult(Activity.RESULT_OK, Intent().putExtra("FA_RESPONSE", text))
+            setResult(Activity.RESULT_OK, Intent(this,MainActivity::class.java).putExtra("FA_RESPONSE", text))
             finish()
         }
     }
