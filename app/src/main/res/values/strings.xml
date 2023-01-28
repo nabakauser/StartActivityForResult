@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StartActivityForResult</string>
+    <string name="first_activity">First Activity</string>
+    <string name="go_to_activity_two">Go to Activity Two</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="go_to_activity_three">Go to Activity Three</string>
+    <string name="third_activity">Third Activity</string>
+    <string name="go_to_activity_four">Go to Activity Four</string>
+    <string name="fourth_activity">Fourth Activity</string>
+    <string name="done">Done</string>
+</resources>
